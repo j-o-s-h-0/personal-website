@@ -16,7 +16,7 @@ const Projects = () => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.3, duration: 0.5 }}
       className='text-center mb-2 text-lg font-Ovo'>
-        My portfolio
+        Featured work
       </motion.h4>
 
       <motion.h2
@@ -24,7 +24,7 @@ const Projects = () => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.5, duration: 0.5 }}
       className='text-center text-5xl font-Ovo'>
-        My latest projects
+        My projects
       </motion.h2>
 
       <motion.p
@@ -45,8 +45,8 @@ const Projects = () => {
             <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
-            className='flex flex-col items-center aspect-square bg-white rounded-lg relative cursor-pointer group w-[350px] border-2 border-black dark:border-white'>
-              <div className='w-full'>
+            className='flex flex-col items-center bg-white rounded-lg relative cursor-pointer group border-2 border-black dark:border-white'>
+              <div className='w-96 max-w-[80vw]'>
                 <Image src={src} alt={title} className='rounded-tl-md rounded-tr-md'/>
               </div>
               <div className='bg-white w-full rounded-bl-md rounded-br-md py-3 px-5 flex items-center justify-between duration-500'>

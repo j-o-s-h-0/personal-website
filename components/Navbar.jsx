@@ -42,10 +42,10 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? '' : 'bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent'} `}>
           <li><a className='font-Ovo' href='#top'>Home</a></li>
-          <li><a className='font-Ovo' href='#about'>About me</a></li>
-          <li><a className='font-Ovo' href='#projects'>My Projects</a></li>
+          <li><a className='font-Ovo' href='#about'>About</a></li>
+          <li><a className='font-Ovo' href='#projects'>Projects</a></li>
           {/* <li><a className='font-Ovo' href='#services'>Services</a></li> */}
-          <li><a className='font-Ovo' href='#contact'>Contact me</a></li>
+          <li><a className='font-Ovo' href='#contact'>Contact</a></li>
         </ul>
 
         <div className='flex items-center gap-4'>
@@ -71,10 +71,10 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
       <div className={`${menuOpen ? 'flex' : 'hidden'}`}>
         <ul ref={sideMenuRef} className='flex flex-col md:hidden items-center gap-4 py-6 px-10 w-full pb-1 z-50'>
           <li><a className='font-Ovo' onClick={closeMenu} href='#top'>Home</a></li>
-          <li><a className='font-Ovo' onClick={closeMenu} href='#about'>About me</a></li>
-          <li><a className='font-Ovo' onClick={closeMenu} href='#projects'>My Projects</a></li>
+          <li><a className='font-Ovo' onClick={closeMenu} href='#about'>About</a></li>
+          <li><a className='font-Ovo' onClick={closeMenu} href='#projects'>Projects</a></li>
           {/* <li><a className='font-Ovo' onClick={closeMenu} href='#services'>Services</a></li> */}
-          <li><a className='font-Ovo' onClick={closeMenu} href='#contact'>Contact me</a></li>
+          <li><a className='font-Ovo' onClick={closeMenu} href='#contact'>Contact</a></li>
         </ul>
       </div>
     </nav>

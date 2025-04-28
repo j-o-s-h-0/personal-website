@@ -42,7 +42,7 @@ const Contact = () => {
       whileInView={{ y: 0, opacity: 1 }} 
       transition={{ delay: 0.3, duration: 0.5 }}
       className='text-center mb-2 text-lg font-Ovo'>
-        Connect with me
+        Get in touch
       </motion.h4>
 
       <motion.h2
@@ -50,7 +50,7 @@ const Contact = () => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.5, duration: 0.5 }}
       className='text-center text-5xl font-Ovo'>
-        Get in touch
+        Contact me
       </motion.h2>
 
       <motion.p

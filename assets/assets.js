@@ -71,7 +71,7 @@ export const assets = {
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Python, C++, C, Java, and JavaScript', href: 'https://github.com/j-o-s-h-0/', target: '_blank' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'BS in Computer Science at UIUC (May 2026)', href: 'https://siebelschool.illinois.edu/', target: '_blank' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects across different topics', href: '#projects', target: '_self' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built projects spanning a variety of topics', href: '#projects', target: '_self' },
 ];
 
 export const toolsData = [
@@ -84,5 +84,5 @@ export const toolsData = [
 ];
 
 export const workData = [
-    { title: 'Personal Website', description: 'Web Development', src: assets.personal_website, href: 'https://github.com/j-o-s-h-0/personal-website/', target: '_blank' },
+    { title: 'Personal Website', description: 'Web Development', src: assets.personal_website, href: 'https://github.com/j-o-s-h-0/personal-website/blob/main/README.md', target: '_blank' },
 ]
