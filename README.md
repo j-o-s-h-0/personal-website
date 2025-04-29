@@ -41,12 +41,10 @@ The website features animated sections, a custom dark mode toggle, and a respons
 | `Contact.jsx` | Contact form submission to Web3Forms, live user feedback during submission |
 | `Footer.jsx` | Footer with branding, copyright, and social media |
 
-## Contact
-
-Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/joshua-thomas-nelson/)
-
-Or email me directly at [contact@joshtn.com](mailto:contact@joshtn.com)
-
 ## Credits
 
 Design inspiration was drawn from the video [How To Make Portfolio Website Using Next JS | Build Modern Portfolio Site In React JS 2025](https://www.youtube.com/watch?v=Y2kGqbzvAn4) by **GreatStack**.
+
+## Contact
+
+Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/joshua-thomas-nelson/) or email me directly at [contact@joshtn.com](mailto:contact@joshtn.com).
