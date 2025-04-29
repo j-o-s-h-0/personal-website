@@ -11,7 +11,7 @@ const Header = () => {
       whileInView={{scale: 1}}
       transition={{duration: 0.8, type: 'spring', stiffness: 100}}
       className='flex mt-[6.5rem]'>
-        <Image src={assets.profile_img} alt='' className='rounded-full w-32' />
+        <Image src='/profile-header.png' alt='profile image' width={0} height={0} className='w-32 h-auto rounded-full' sizes='100vw' priority />
       </motion.div>
 
       <motion.h3 

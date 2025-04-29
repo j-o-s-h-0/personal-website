@@ -5,7 +5,7 @@ import { motion } from 'motion/react'
 
 const About = ({isDarkMode}) => {
   return (
-    <motion.div id='about' className='w-full px-[12%] py-10 scroll-mt-20'
+    <motion.div id='about' className='w-full px-[8%] sm:px-[12%] py-10 scroll-mt-20'
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration: 1}}>
@@ -37,7 +37,7 @@ const About = ({isDarkMode}) => {
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 0.6}}
         className='w-64 sm:w-80 rounded-3xl max-w-none'>
-          <Image src={assets.user_image} alt='user' className='w-full rounded-3xl' />
+          <Image src='/profile-about.png' alt='profile image' width={0} height={0} className='w-full h-auto rounded-3xl' sizes='100vw' />
         </motion.div>
     
         <motion.div 
@@ -46,13 +46,10 @@ const About = ({isDarkMode}) => {
         transition={{duration: 0.6, delay: 0.8}}
         className='flex-1'>
           <p className='mb-10 max-w-2xl font-Ovo'>
-            As a dedicated computer science student, I am deeply fascinated by artificial intelligence and the intersections of computer science with business and cybersecurity. My proficiency in Python, C++, C, Java, and JavaScript forms a robust coding foundation, which is complemented by strong leadership and project management skills. I have hands-on experience with various tools and frameworks, such as TensorFlow, PyTorch, scikit-learn, Pandas, React, SQL, and Git.
+            I&apos;m Joshua Nelson, a Computer Science student at the University of Illinois Urbana-Champaign with a strong interest in machine learning, artificial intelligence, and the use of technology to tackle real-world problems. Whether it&apos;s building music visualizations that bring audio features to life or developing predictive models for life expectancy, I enjoy creating projects that combine innovation with practical impact. I believe that technology, at its best, should inspire curiosity, foster meaningful connections, and drive positive change.
           </p>
           <p className='mb-10 max-w-2xl font-Ovo'>
-            A highlight of my work in machine learning includes a project that predicted a county&apos;s average life expectancy using data on health insurance coverage, obesity prevalence, income, and more. In this project, I experimented with various machine learning algorithms, including different types of regression and neural networks, illustrating my ability to apply technical expertise to practical challenges.
-          </p>
-          <p className='mb-10 max-w-2xl font-Ovo'>
-            Beyond academics, I am passionate about programming and mentoring upcoming developers. I am committed to promoting equitable tech access, particularly for young learners, and I firmly believe in the potential of technology to drive a brighter future. I invite you to join me in fostering innovation and creating a positive impact through technology.
+            When I&apos;m not working on a project or learning something new, you&apos;ll often find me outdoors. I love hiking new trails, exploring national parks, and skiing in the Rockies whenever I get the chance. There&apos;s something special about soaking in an incredible view, discovering a hidden path, or carving through fresh snow. It&apos;s moments like these that remind me how much I love being connected to nature. Getting outdoors is one of my favorite ways to unwind, explore, and enjoy the world around me.
           </p>
 
           <motion.ul
@@ -65,9 +62,11 @@ const About = ({isDarkMode}) => {
                 <motion.li 
                 whileHover={{scale: 1.05}}
                 className='border-[0.5px] border-gray-400 rounded-xl p-6 h-full hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'>
-                  <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-7 mt-3' />
-                  <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}</h3>
-                  <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
+                  <div className='flex flex-row sm:flex-col flex-wrap items-center sm:items-stretch'>
+                    <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-7 mr-3 sm:mr-0 mt-0 sm:mt-2 h-full' />
+                    <h3 className='sm:mt-4 font-semibold text-gray-700 dark:text-white'>{title}</h3>
+                  </div>
+                  <p className='mt-4 text-gray-600 text-sm dark:text-white/80'>{description}</p>
                 </motion.li>
               </a>
             ))}
@@ -77,7 +76,7 @@ const About = ({isDarkMode}) => {
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.5 }}
-          className='mt-6 mb-3 text-gray-700 font-Ovo dark:text-white/80'>
+          className='flex justify-center sm:justify-start mt-6 mb-3 text-gray-700 font-Ovo dark:text-white/80'>
             Tools I use
           </motion.h4>
 
@@ -85,13 +84,13 @@ const About = ({isDarkMode}) => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.6 }}
-          className='flex items-center gap-3 sm:gap-5'>
+          className='flex flex-wrap justify-center sm:justify-start gap-5'>
             {toolsData.map(({name, src, href}, index) => (
               <a href={href} target="_blank" rel="noopener noreferrer" key={index}>
                 <motion.li 
                 whileHover={{ scale: 1.1 }}
-                className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'>
-                  <Image src={src} alt={name} className='w-5 sm:w-7' />
+                className='flex items-center justify-center w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'>
+                  <Image src={src} alt={name} className='w-7' />
                 </motion.li>
               </a>
             ))}
