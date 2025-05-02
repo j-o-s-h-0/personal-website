@@ -27,7 +27,7 @@ const Header = () => {
       whileInView={{y: 0, opacity: 1}}
       transition={{duration: 0.8, delay: 0.5}}
       className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
-        Computer Science student with a passion for Machine Learning.
+        Computer Science student with a passion for Machine Learning
       </motion.h1>
 
       <motion.p
@@ -35,7 +35,7 @@ const Header = () => {
       whileInView={{opacity: 1}}
       transition={{duration: 0.6, delay: 0.7}}
       className='max-w-2xl mx-auto font-Ovo'>
-      I&apos;m a student at the University of Illinois Urbana-Champaign, exploring how technology, curiosity, and creativity can combine to solve real-world challenges.
+        I&apos;m a student at the University of Illinois Urbana-Champaign, exploring how technology, curiosity, and creativity can combine to solve real-world challenges.
       </motion.p>
 
       <div className='flex flex-row items-center gap-4 mt-4 mb-[7rem]'>

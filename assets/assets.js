@@ -29,6 +29,7 @@ import github from './github.png';
 import github_dark from './github-dark.png';
 import personal_website from './personal-website.png';
 import life_expectancy_predictions from './life-expectancy-predictions.png';
+import music_visualization from './music-visualization.png';
 
 export const assets = {
     logo,
@@ -62,6 +63,7 @@ export const assets = {
     github_dark,
     personal_website,
     life_expectancy_predictions,
+    music_visualization,
 };
 
 export const infoList = [
@@ -82,4 +84,5 @@ export const toolsData = [
 export const workData = [
     { title: 'Personal Website', description: 'Web Development', src: assets.personal_website, href: 'https://github.com/j-o-s-h-0/personal-website/blob/main/README.md', target: '_blank' },
     { title: 'Life Expectancy Predictions', description: 'Machine Learning', src: assets.life_expectancy_predictions, href: 'https://github.com/j-o-s-h-0/life-expectancy-predictions/blob/main/README.md', target: '_blank' },
+    { title: 'Music Visualization', description: 'Machine Learning', src: assets.music_visualization, href: '/music', target: '_self' },
 ];

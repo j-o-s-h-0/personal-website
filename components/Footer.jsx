@@ -6,7 +6,7 @@ const Footer = ({isDarkMode}) => {
   return (
     <div className='mt-16'>
       <div className='text-center'>
-        <a href='#top'>
+        <a href='/#top'>
           <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt='' className='w-36 mx-auto mb-2'/>
         </a>
 
